@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PenguranganFragment">
+
+    <TextView
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/half_dims"
+        android:text="@string/kalkulator_pengurangan"/>
+
+    <EditText
+        android:id="@+id/kurangsatu"
+        android:hint="@string/masukkan_bilangan_pertama"
+        android:layout_marginVertical="@dimen/half_dims"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/kurangdua"
+        android:hint="@string/masukkan_bilangan_kedua"
+        android:layout_marginVertical="@dimen/half_dims"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/hitungKurang"
+        android:text="@string/hitung"
+        android:layout_marginVertical="@dimen/half_dims"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/resultKurang"
+        android:textAlignment="center"
+        android:padding="@dimen/main_dims"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:text="@string/kembali_ke_home"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
