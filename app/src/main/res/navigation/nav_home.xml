@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="id.my.fanslab.kalkulator.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/toAdditional"
+            app:destination="@id/penjumlahanFragment" />
+        <action
+            android:id="@+id/toMultiply"
+            app:destination="@id/perkalianFragment" />
+        <action
+            android:id="@+id/toDivisible"
+            app:destination="@id/pembagianFragment" />
+        <action
+            android:id="@+id/toSubstract"
+            app:destination="@id/penguranganFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembagianFragment"
+        android:name="id.my.fanslab.kalkulator.PembagianFragment"
+        android:label="fragment_pembagian"
+        tools:layout="@layout/fragment_pembagian" >
+        <action
+            android:id="@+id/action_pembagianFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/penguranganFragment"
+        android:name="id.my.fanslab.kalkulator.PenguranganFragment"
+        android:label="fragment_pengurangan"
+        tools:layout="@layout/fragment_pengurangan" >
+        <action
+            android:id="@+id/action_penguranganFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/penjumlahanFragment"
+        android:name="id.my.fanslab.kalkulator.PenjumlahanFragment"
+        android:label="fragment_penjumlahan"
+        tools:layout="@layout/fragment_penjumlahan" >
+        <action
+            android:id="@+id/action_penjumlahanFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perkalianFragment"
+        android:name="id.my.fanslab.kalkulator.PerkalianFragment"
+        android:label="fragment_perkalian"
+        tools:layout="@layout/fragment_perkalian" >
+        <action
+            android:id="@+id/action_perkalianFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
